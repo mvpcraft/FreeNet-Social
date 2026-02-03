@@ -1,77 +1,84 @@
-# Bluesky Social App
+# Social Application
 
-Welcome friends! This is the codebase for the Bluesky Social app.
+Welcome to the codebase for our decentralized social networking application.
 
-Get the app itself:
+## Overview
 
-- **Web: [bsky.app](https://bsky.app)**
-- **iOS: [App Store](https://apps.apple.com/us/app/bluesky-social/id6444370199)**
-- **Android: [Play Store](https://play.google.com/store/apps/details?id=xyz.blueskyweb.app)**
+This is a cross-platform social application available on:
+
+- Web
+- iOS
+- Android
 
 ## Development Resources
 
-This is a [React Native](https://reactnative.dev/) application, written in the TypeScript programming language. It builds on the `atproto` TypeScript packages (like [`@atproto/api`](https://www.npmjs.com/package/@atproto/api)), which are also open source, but in [a different git repository](https://github.com/bluesky-social/atproto).
+This application is built with React Native and written in TypeScript. It leverages the AT Protocol TypeScript packages for decentralized social networking functionality.
 
-There is a small amount of Go language source code (in `./bskyweb/`), for a web service that returns the React Native Web application.
+A small Go language component handles the web service that serves the React Native Web application.
 
-The [Build Instructions](./docs/build.md) are a good place to get started with the app itself.
+### Getting Started
 
-The Authenticated Transfer Protocol ("AT Protocol" or "atproto") is a decentralized social media protocol. You don't *need* to understand AT Protocol to work with this application, but it can help. Learn more at:
+Refer to the Build Instructions documentation to begin working with the application.
 
-- [Overview and Guides](https://atproto.com/guides/overview)
-- [GitHub Discussions](https://github.com/bluesky-social/atproto/discussions) 👈 Great place to ask questions
-- [Protocol Specifications](https://atproto.com/specs/atp)
-- [Blogpost on self-authenticating data structures](https://bsky.social/about/blog/3-6-2022-a-self-authenticating-social-protocol)
+### Understanding the Protocol
 
-The Bluesky Social application encompasses a set of schemas and APIs built in the overall AT Protocol framework. The namespace for these "Lexicons" is `app.bsky.*`.
+The Authenticated Transfer Protocol (AT Protocol) is a decentralized social media protocol. While understanding AT Protocol is not required to work with this application, familiarity with its concepts can be beneficial.
+
+Key resources include:
+
+- Protocol Overview and Guides
+- Community Discussions
+- Protocol Specifications
+- Technical documentation on self-authenticating data structures
+
+The application implements a set of schemas and APIs built within the AT Protocol framework.
 
 ## Contributions
 
-> [!NOTE]
-> While we do accept contributions, we prioritize high quality issues and pull requests. Adhering to the below guidelines will ensure a more timely review.
+We welcome contributions while prioritizing high-quality issues and pull requests. Adherence to the following guidelines will ensure a timely review.
 
-**Rules:**
+### Policies
 
-- We may not respond to your issue or PR.
-- We may close an issue or PR without much feedback.
-- We may lock discussions or contributions if our attention is getting DDOSed.
-- We're not going to provide support for build issues.
+- Response to issues or pull requests is not guaranteed.
+- Issues or pull requests may be closed with limited feedback.
+- Discussions or contributions may be locked if volume becomes unmanageable.
+- Support for build-related issues is not provided.
 
-**Guidelines:**
+### Guidelines
 
-- Check for existing issues before filing a new one please.
-- Open an issue and give some time for discussion before submitting a PR.
-- Stay away from PRs like...
-  - Changing "Post" to "Skeet."
-  - Refactoring the codebase, e.g., to replace React Query with Redux Toolkit or something.
-  - Adding entirely new features without prior discussion. 
+- Search for existing issues before creating a new one.
+- Open an issue for discussion before submitting a pull request.
+- Avoid pull requests that:
+  - Make superficial branding changes
+  - Refactor the codebase without prior approval
+  - Introduce entirely new features without prior discussion
 
-Remember, we serve a wide community of users. Our day-to-day involves us constantly asking "which top priority is our top priority." If you submit well-written PRs that solve problems concisely, that's an awesome contribution. Otherwise, as much as we'd love to accept your ideas and contributions, we really don't have the bandwidth. That's what forking is for!
+We serve a broad user community and must carefully prioritize our efforts. Well-written pull requests that solve problems concisely are greatly appreciated. For larger experimental changes, please consider forking the repository.
 
-## Forking guidelines
+## Forking Guidelines
 
-You have our blessing 🪄✨ to fork this application! However, it's very important to be clear to users when you're giving them a fork.
+You are welcome to fork this application. However, clear differentiation from the original project is essential.
 
-Please be sure to:
+When forking, please ensure you:
 
-- Change all branding in the repository and UI to clearly differentiate from Bluesky.
-- Change any support links (feedback, email, terms of service, etc) to your own systems.
-- Replace any analytics or error-collection systems with your own so we don't get super confused.
+- Update all branding throughout the repository and user interface.
+- Replace support links (feedback, email, terms of service) with your own resources.
+- Substitute any analytics or error-collection systems with your own implementations.
 
-## Security disclosures
+## Security Disclosures
 
-If you discover any security issues, please send an email to security@bsky.app. The email is automatically CC'd to the entire team and we'll respond promptly.
+If you discover any security vulnerabilities, please report them via the designated security contact. Reports are distributed to the entire team for prompt response.
 
-## Are you a developer interested in building on atproto?
+## Building on the Protocol
 
-Bluesky is an open social network built on the AT Protocol, a flexible technology that will never lock developers out of the ecosystems that they help build. With atproto, third-party integration can be as seamless as first-party through custom feeds, federated services, clients, and more.
+This project is built on an open protocol designed to prevent developer lock-out from ecosystems they help create. Third-party integration can be as seamless as first-party development through custom feeds, federated services, clients, and additional extensions.
 
-## License (MIT)
+## License
 
-See [./LICENSE](./LICENSE) for the full license.
+This project is released under the MIT License. See the LICENSE file for complete details.
 
-Bluesky Social PBC has committed to a software patent non-aggression pledge. For details see [the original announcement](https://bsky.social/about/blog/10-01-2025-patent-pledge).
+The organization maintains a software patent non-aggression pledge.
 
-## P.S.
+## Acknowledgments
 
-We ❤️ you and all of the ways you support us. Thank you for making Bluesky a great place!
+Thank you to all contributors and community members for your support in making this project successful.
